@@ -4,7 +4,7 @@ This is an example to show how to setup PostgreSQL + pgAdmin 4 + Docker-Compose.
 
 ## How to do the set up? ##
 
-**:warning: Warning:** it is necessarily to developers to have Docker installed in your machine, so please follow the steps below:
+**:warning: Warning:** it´s necessarily to developers to have Docker installed in your machine, so please follow the steps below:
 - 🐳 [Docker Engine Installation](https://docs.docker.com/engine/install/ubuntu/)  
 - 🐳 [Docker Compose Installation](https://docs.docker.com/compose/install/)  
 - **💡 Tip:** [For any doubts please use Docker documentation](https://docs.docker.com/)  
@@ -26,6 +26,22 @@ For reset the application(to drop and on again), execute:
 
 ```sh
 docker-compose down && docker-compose up
+```
+
+#### Setting up
+
+Go to [localhost:5555](http://localhost:5555/) and use the application like the example below:
+
+![Setup](https://raw.githubusercontent.com/claudimf/PostgreSQL_pgAdmin4_Docker-Compose/main/Set_up.gif)
+
+Variables:  
+
+```sh
+PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+PGADMIN_DEFAULT_PASSWORD: admin
+HOSTNAME: postgres
+POSTGRES_USER: postgres
+POSTGRES_PASSWORD: postgres
 ```
 
 ### Files permissions ###
